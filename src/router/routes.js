@@ -1,8 +1,14 @@
 const routes = [
   {
-    path: '/',
+    path: '/quasar',
     component: () => import('layouts/MainLayout.vue'),
     children: [{ path: '', component: () => import('pages/IndexPage.vue') }],
+  },
+
+  {
+    path: '/',
+    component: () => import('layouts/ExampleLayout.vue'),
+    children: [{ path: '', component: () => import('pages/PortfolioPage.vue') }]
   },
 
   // Always leave this as last one,

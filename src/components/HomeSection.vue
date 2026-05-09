@@ -1,0 +1,120 @@
+<template>
+  <div class="row items-center justify-center full-height portfolio-hero q-px-xl">
+    <div class="col-12 col-lg-10">
+      <div class="row items-center q-col-gutter-xl">
+
+        <!-- Lado izquierdo: Texto -->
+        <div class="col-12 col-md-6">
+          
+          <div class="text-h2 text-weight-bold text-white uppercase q-mb-none">
+            desarrollador <span class="text-teal-accent">web</span>
+          </div>
+          <div class="text-h2 text-weight-bold text-teal-accent uppercase q-mt-none">
+            full stack
+          </div>
+  
+          <div class="row q-gutter-md q-mt-xl">
+            <q-btn
+              rounded
+              unelevated
+              label="Contactame"
+              color="teal-accent"
+              text-color="dark"
+              class="q-px-xl text-weight-bold"
+              @click="$emit('hireMe')"
+            />
+            <q-btn
+              rounded
+              outline
+              label="descargar CV"
+              color="grey-7"
+              icon-right="download"
+              class="q-px-lg text-white"
+              @click="$emit('downloadCV')"
+            />
+          </div>
+        </div>
+
+        <!-- lado derecho: imagen -->
+        <div class="col-12 col-md-6">
+          <div class="illustration-container flex justify-center items-center">
+            <div class="illustration-wrapper">
+              <img 
+                src="~assets/images/progresive_web_app.svg" 
+                alt="Creative UI Designer Illustration"
+                class="illustration-image"
+              />
+            </div>
+          </div>
+        </div>
+
+
+
+      </div>
+    </div>
+
+      
+    </div>
+
+    
+
+    <!-- <div class="absolute-bottom full-width flex flex-center q-pb-lg">
+      <q-btn flat round icon="expand_more" color="grey-6" size="lg" />
+    </div> -->
+</template>
+
+<script setup>
+</script>
+
+<style lang="scss" scoped>
+.portfolio-hero {
+  background-color: #1a1f26;
+  overflow: hidden;
+  min-height: 100vh;           /* Opcional: para que ocupe toda la altura */
+}
+
+.illustration-container {
+  height: 100%;                /* Toma toda la altura disponible del row */
+  min-height: 420px;           /* Altura mínima en mobile */
+}
+
+.illustration-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 520px;            /* ← Ajusta este valor según quieras que sea el tamaño máximo */
+  aspect-ratio: 1 / 1;         /* Cambia según el aspect ratio de tu imagen (ej: 16/9, 4/3, etc) */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.illustration-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;         /* ← Esto es clave: fitea sin estirar */
+  object-position: center;
+  filter: drop-shadow(0 20px 30px rgba(0, 180, 180, 0.25)); /* opcional: bonito efecto */
+}
+
+.text-teal-accent {
+  color: #00b4b4; // Color verde agua similar al diseño
+}
+
+.bg-teal-accent {
+  background-color: #00b4b4;
+}
+
+.uppercase {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.text-h2 {
+  line-height: 1.1;
+  font-size: clamp(2.5rem, 8vw, 4.5rem);
+}
+
+
+
+
+</style>
