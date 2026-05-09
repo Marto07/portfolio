@@ -9,7 +9,7 @@ const projects = [
       "Sistema de gestión de herramientas",
 
     coverImage:
-      "src/assets/images/tomo_track.png",
+      "tomo_track.png",
 
     githubUrl:
       "https://github.com/marto07/tomo-track",
@@ -32,8 +32,7 @@ const projects = [
     shortDescription:
       "Sistema de gestión de alquiler de canchas",
 
-    coverImage:
-      "src/assets/images/alquiler_de_cancha.png",
+    coverImage: 'alquiler_de_cancha.png',
 
     githubUrl:
       "https://github.com/marto07/alquiler-de-cancha",
@@ -58,7 +57,7 @@ const projects = [
       "Lista de tareas básica",
 
     coverImage:
-      "src/assets/images/quasar_todo.png",
+      "quasar_todo.png",
 
     githubUrl:
       "https://github.com/marto07/quasar-todo",
@@ -82,7 +81,7 @@ const projects = [
       "Crea tu propia lista de animes vistos y por ver!",
 
     coverImage:
-      "src/assets/images/vue_anime.png",
+      "vue_anime.png",
 
     githubUrl:
       "https://github.com/marto07/vue-anime",
@@ -108,7 +107,7 @@ const projects = [
       "Carrito de compra con integracion de pagos",
 
     coverImage:
-      "src/assets/images/pago_facil.png",
+      "pago_facil.png",
 
     githubUrl:
       "https://github.com/marto07/pago-facil",
@@ -132,7 +131,7 @@ const projects = [
       "Lista de personajes, ubicaciones y episodios de ricky y morthy",
 
     coverImage:
-      "src/assets/images/portal_finder_3000.png",
+      "portal_finder_3000.png",
 
     githubUrl:
       "https://github.com/marto07/ricky-morthy",

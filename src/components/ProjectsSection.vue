@@ -1,6 +1,26 @@
 <script setup>
-import { projects } from 'src/data/index';
-import technologies from 'src/data/technologies';
+import { projects as rawProjects, technologies as rawTechnologies } from 'src/data/index';
+
+const projects = rawProjects.map(project => ({
+  ...project,
+  coverImage: new URL(
+    `../assets/images/${project.coverImage}`,
+    import.meta.url
+  ).href
+}))
+
+const technologies = Object.fromEntries(
+  Object.entries(rawTechnologies).map(([key, tech]) => [
+    key,
+    {
+      ...tech,
+      icon: new URL(
+        `../assets/icons/${tech.icon}`,
+        import.meta.url
+      ).href
+    }
+  ])
+)
 
 const thumbStyle = {
   borderRadius: '5px',
