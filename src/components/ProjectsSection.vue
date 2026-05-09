@@ -63,7 +63,7 @@ const goToGithub = (githubUrl) => {
                 </p>
               </q-card-section>
 
-              <!-- 🔥 Tecnologías -->
+              <!-- Tecnologías -->
               <q-card-actions align="left" class="q-gutter-sm q-px-md q-pb-md">
                 <div
                   v-for="(tech, key) in project.technologies"

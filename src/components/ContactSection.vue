@@ -36,7 +36,7 @@
               </div>
             </a>
 
-            <!-- LinkedIn (cuando lo tengas) -->
+            <!-- LinkedIn -->
             <a :href="linkedIn" target="_blank" class="contact-item">
               <q-icon name="mdi-linkedin" size="28px" color="teal-accent" class="q-mr-md" />
               <div>
@@ -123,7 +123,6 @@
   filter: drop-shadow(0 25px 35px rgba(0, 180, 180, 0.25));
 }
 
-/* Reutilizamos los estilos que ya tenías */
 .text-teal-accent {
   color: #00b4b4;
 }

@@ -24,7 +24,6 @@
                   Disfruto construir proyectos completos, manteniendo un enfoque en la organización del código, 
                   la mantenibilidad y las buenas prácticas.
                 </p>
-                <!-- Puedes agregar más párrafos o información aquí -->
               </div>
 
               
@@ -62,15 +61,15 @@ defineEmits(['hireMe', 'downloadCV'])
 }
 
 .illustration-container {
-  height: 100%;                /* Toma toda la altura disponible del row */
-  min-height: 420px;           /* Altura mínima en mobile */
+  height: 100%;                
+  min-height: 420px;          
 }
 
 .illustration-wrapper {
   position: relative;
   width: 100%;
-  max-width: 520px;            /* ← Ajusta este valor según quieras que sea el tamaño máximo */
-  aspect-ratio: 1 / 1;         /* Cambia según el aspect ratio de tu imagen (ej: 16/9, 4/3, etc) */
+  max-width: 520px;            
+  aspect-ratio: 1 / 1;         
   display: flex;
   align-items: center;
   justify-content: center;
@@ -79,9 +78,9 @@ defineEmits(['hireMe', 'downloadCV'])
 .illustration-image {
   width: 90%;
   height: 90%;
-  object-fit: contain;         /* ← Esto es clave: fitea sin estirar */
+  object-fit: contain;        
   object-position: center;
-  filter: drop-shadow(0 20px 30px rgba(0, 180, 180, 0.25)); /* opcional: bonito efecto */
+  filter: drop-shadow(0 20px 30px rgba(0, 180, 180, 0.25)); 
 }
 
 .uppercase {

@@ -14,7 +14,7 @@ import { handleHireMe, handleDownloadCV } from 'src/composables/useNavigation'
       <HomeSection
         @hireMe="handleHireMe"
         @downloadCV="handleDownloadCV"
-      />   <!-- o el contenido directo -->
+      />   
     </section>
 
     <!-- SECCIÓN 2: ABOUT ME -->
@@ -32,7 +32,6 @@ import { handleHireMe, handleDownloadCV } from 'src/composables/useNavigation'
       <ContactSection />
     </section>
 
-    <!-- ... más secciones -->
     
   </q-page>
 </template>
