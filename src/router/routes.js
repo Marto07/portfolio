@@ -1,13 +1,9 @@
 const routes = [
-  {
-    path: '/quasar',
-    component: () => import('layouts/MainLayout.vue'),
-    children: [{ path: '', component: () => import('pages/IndexPage.vue') }],
-  },
+  
 
   {
     path: '/',
-    component: () => import('layouts/ExampleLayout.vue'),
+    component: () => import('layouts/MainLayout.vue'),
     children: [{ path: '', component: () => import('pages/PortfolioPage.vue') }]
   },
 
