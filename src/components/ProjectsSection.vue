@@ -36,7 +36,7 @@ const goToGithub = (githubUrl) => {
         horizontal
         :thumb-style="thumbStyle"
         :bar-style="barStyle"
-        style="height: 70vh; width: 70vw;"   
+        class="scroll-area"
       >
         <div class="row no-wrap q-gutter-lg">
           <div
@@ -92,6 +92,14 @@ const goToGithub = (githubUrl) => {
   min-height: 100vh;
   display: flex;
   align-items: center;
+}
+
+.scroll-area {
+  height: 70vh; 
+  width: 70vw;
+  @media(max-width: $breakpoint-xs) {
+    height: 60vh
+  }
 }
 
 .my-card {

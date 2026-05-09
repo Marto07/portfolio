@@ -4,12 +4,23 @@
       <div class="row items-center q-col-gutter-xl">
 
         <!-- Lado izquierdo: Texto -->
-        <div class="col-12 col-md-6">
+        <div class="col-12 col-md-6 presentation">
           
-          <div class="text-h2 text-weight-bold text-white uppercase q-mb-none">
+          <div 
+            class="
+              text-h3 
+              text-weight-bold 
+              text-white uppercase 
+              q-mb-none">
             desarrollador <span class="text-teal-accent">web</span>
           </div>
-          <div class="text-h2 text-weight-bold text-teal-accent uppercase q-mt-none">
+          <div 
+            class="
+              text-h3 
+              text-weight-bold 
+              text-teal-accent 
+              uppercase 
+              q-mt-none">
             full stack
           </div>
   
@@ -41,7 +52,7 @@
             <div class="illustration-wrapper">
               <img 
                 src="~assets/images/progresive_web_app.svg" 
-                alt="Creative UI Designer Illustration"
+                alt="fullstack-web-developer"
                 class="illustration-image"
               />
             </div>
@@ -68,10 +79,11 @@
 
 <style lang="scss" scoped>
 .portfolio-hero {
-  background-color: #1a1f26;
+  background-color: $dark;
   overflow: hidden;
   min-height: 100vh;           /* Opcional: para que ocupe toda la altura */
 }
+
 
 .illustration-container {
   height: 100%;                /* Toma toda la altura disponible del row */
@@ -89,8 +101,8 @@
 }
 
 .illustration-image {
-  width: 100%;
-  height: 100%;
+  width: 90%;
+  height: 90%;
   object-fit: contain;         /* ← Esto es clave: fitea sin estirar */
   object-position: center;
   filter: drop-shadow(0 20px 30px rgba(0, 180, 180, 0.25)); /* opcional: bonito efecto */
@@ -109,9 +121,9 @@
   letter-spacing: 2px;
 }
 
-.text-h2 {
+.text-h3 {
   line-height: 1.1;
-  font-size: clamp(2.5rem, 8vw, 4.5rem);
+  font-size: clamp(2.3rem, 8vw, 4.5rem);
 }
 
 

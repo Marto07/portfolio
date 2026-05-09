@@ -35,6 +35,5 @@ export const handleProjects = () => {
 }
 
 export const handleDownloadCV = () => {
-  alert(`${window.location.origin}/CV.pdf`)
   window.open(`${window.location.origin}/CV.pdf`, "_blank")
 }

@@ -116,8 +116,8 @@
 }
 
 .illustration-image {
-  width: 100%;
-  height: 100%;
+  width: 90%;
+  height: 90%;
   object-fit: contain;
   object-position: center;
   filter: drop-shadow(0 25px 35px rgba(0, 180, 180, 0.25));

@@ -77,8 +77,8 @@ defineEmits(['hireMe', 'downloadCV'])
 }
 
 .illustration-image {
-  width: 100%;
-  height: 100%;
+  width: 90%;
+  height: 90%;
   object-fit: contain;         /* ← Esto es clave: fitea sin estirar */
   object-position: center;
   filter: drop-shadow(0 20px 30px rgba(0, 180, 180, 0.25)); /* opcional: bonito efecto */

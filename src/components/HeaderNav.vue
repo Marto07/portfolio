@@ -14,42 +14,41 @@ import {
     overlay
     class="header-minimal"
   >
-    <q-toolbar class="q-px-md q-py-xs">
+    <q-toolbar class="q-px-sm q-px-md-md q-py-xs">
 
-      <!-- Espacio para futura marca o logo (izquierda) -->
       <div class="header-logo">
-        <!-- Podés poner "Martin Dev" después -->
+        <!-- Martin Dev -->
       </div>
 
       <q-space />
 
-      <!-- Navegación -->
-      <div class="row items-center q-gutter-sm header-nav">
+      <!-- Navegación con gutter responsivo -->
+      <div class="row items-center q-gutter-xs q-gutter-sm-sm header-nav no-wrap">
 
         <q-btn
           flat
-          label="Home"
+          label="Inicio"
           class="header-btn"
           @click="handleHome"
         />
 
         <q-btn
           flat
-          label="About"
+          label="Acerca"
           class="header-btn"
           @click="handleAboutMe"
         />
 
         <q-btn
           flat
-          label="Projects"
+          label="Proyectos"
           class="header-btn"
           @click="handleProjects"
         />
 
         <q-btn
           flat
-          label="Contact"
+          label="Contacto"
           class="header-btn header-btn-accent"
           @click="handleHireMe"
         />
@@ -61,12 +60,14 @@ import {
 </template>
 
 <style scoped lang="scss">
-
 .header-minimal {
-  background: #1a1f26; /* semitransparente */
+  background: #1a1f26;
 }
 
-/* Botones */
+.header-nav {
+  // Evita que los botones salten de línea pase lo que pase
+  flex-wrap: nowrap;
+}
 
 .header-btn {
   color: white;
@@ -74,23 +75,27 @@ import {
   letter-spacing: 1px;
   text-transform: uppercase;
   transition: all 0.2s ease;
+  
+  // Ajustes para móviles (xs)
+  @media (max-width: $breakpoint-xs-max) {
+    font-size: 11px;      // Bajamos un poco el tamaño
+    letter-spacing: 0.5px; // Reducimos espacio entre letras
+    padding: 4px 6px;     // Reducimos el área de click interna para que entren
+    min-height: unset;    // Quitamos altura mínima por defecto de Quasar
+  }
 }
 
 .header-btn:hover {
   color: #00b4b4;
 }
 
-/* Contact destacado */
-
 .header-btn-accent {
   color: #00b4b4;
+  font-weight: bold;
 }
-
-/* Espacio para logo futuro */
 
 .header-logo {
   font-size: 14px;
   color: rgba(0, 180, 180, 0.8);
 }
-
 </style>
